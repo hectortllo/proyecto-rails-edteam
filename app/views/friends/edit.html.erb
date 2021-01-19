@@ -1,6 +1,9 @@
-<h1>Editing Friend</h1>
+<div class="container my-5">
 
-<%= render 'form', friend: @friend %>
+  <h1>Editing Friend</h1>
 
-<%= link_to 'Show', @friend %> |
-<%= link_to 'Back', friends_path %>
+  <%= render 'form', friend: @friend %>
+
+  <button type = button class="btn btn-success"><%= link_to 'Show', @friend %></button>
+  <button type = button class="btn btn-success"><%= link_to 'Back', friends_path %></button>
+</div>

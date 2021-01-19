@@ -1,24 +1,35 @@
-<p id="notice"><%= notice %></p>
+<div class="container my-5">
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>First name:</strong>
-  <%= @friend.first_name %>
-</p>
+  <div class="card text-center">
+    <div class="card-header">
+      Friend
+    </div>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @friend.last_name %>
-</p>
+    <div class="card-body">
+      <p>
+        <strong>First name:</strong>
+        <%= @friend.first_name %>
+      </p>
 
-<p>
-  <strong>Phone number:</strong>
-  <%= @friend.phone_number %>
-</p>
+      <p>
+        <strong>Last name:</strong>
+        <%= @friend.last_name %>
+      </p>
 
-<p>
-  <strong>Address:</strong>
-  <%= @friend.address %>
-</p>
+      <p>
+        <strong>Phone number:</strong>
+        <%= @friend.phone_number %>
+      </p>
 
-<%= link_to 'Edit', edit_friend_path(@friend) %> |
-<%= link_to 'Back', friends_path %>
+      <p>
+        <strong>Address:</strong>
+        <%= @friend.address %>
+      </p>
+    </div>
+
+    <div class="card-footer text-muted">
+      <button type="button" class="btn btn-success"><%= link_to 'Edit', edit_friend_path(@friend) %></button>
+      <button type="button" class="btn btn-success"><%= link_to 'Back', friends_path %></button>
+    </div>
+</div> 
